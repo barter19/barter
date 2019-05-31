@@ -8,30 +8,12 @@
  */
 
 // Lazy Load Routes
-const Home = () => import('@/views/Home');
-const NotFound = () => import('@/views/NotFound');
-const Examples = () => import('@/views/Examples');
-const GetStarted = () => import('@/views/GetStarted');
+const RegistrationPage = () => import('@/views/RegistrationPage');
 
 export default [
   {
-    path: '/',
-    name: 'Home',
-    component: Home,
-  },
-  {
-    path: '*',
-    name: 'NotFound',
-    component: NotFound,
-  },
-  {
-    path: '/examples',
-    name: 'Examples',
-    component: Examples,
-  },
-  {
-    path: '/getStarted',
-    name: 'Get Started',
-    component: GetStarted,
+    path: '/registration',
+    name: 'RegistrationPage',
+    component: RegistrationPage,
   },
 ];

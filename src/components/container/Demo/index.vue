@@ -90,6 +90,7 @@ export default {
       name: state => state.name,
       count: state => state.count,
       locale: state => state.locale,
+      chatId: state => state.chatId
     }),
     ...mapGetters([
       'positiveCount',
@@ -100,6 +101,7 @@ export default {
   },
   mounted() {
     this.$store.dispatch('demo/getRedditPosts');
+    console.log(this.chatId);
   },
   methods: {
     updateName(e) {

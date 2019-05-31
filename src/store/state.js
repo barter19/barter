@@ -7,6 +7,8 @@
  * Further Reading: https://vuex.vuejs.org/en/state.html
  */
 
-const state = {};
+const state = {
+  chatId:"37geiq7e2h"
+};
 
 export default state;
