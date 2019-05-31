@@ -17,6 +17,10 @@ import {
   UPDATE_LOCALE,
 } from './constants';
 import { fetchRedditPosts } from './side-effects';
+import { createApolloFetch } from 'apollo-fetch';
+
+const uri = 'http://127.0.0.1:3000/graphql';
+const apolloFetch = createApolloFetch({ uri });
 
 const actions = {
   updateName({ commit }, payload) {
@@ -62,6 +66,22 @@ const actions = {
       locale,
     });
   },
+  registerUser(){
+    const query = `
+    query Users {
+      users {
+        id
+      }
+    }`;
+  apolloFetch({ query}).then(result => {
+    const { data } = result;
+
+  console.log(result);
+  })
+  .catch(error => {
+    //respond to a network error
+  });
+}
 };
 
 export default actions;

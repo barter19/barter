@@ -11,6 +11,7 @@
 const Home = () => import('@/views/Home');
 const NotFound = () => import('@/views/NotFound');
 const Examples = () => import('@/views/Examples');
+const GetStarted = () => import('@/views/GetStarted');
 
 export default [
   {
@@ -27,5 +28,10 @@ export default [
     path: '/examples',
     name: 'Examples',
     component: Examples,
+  },
+  {
+    path: '/getStarted',
+    name: 'Get Started',
+    component: GetStarted,
   },
 ];

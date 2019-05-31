@@ -2,10 +2,10 @@
  * Demo i18n Messages
  */
 
-const messages = {
-  en: {
-    title: 'VueCharged Template',
-  },
-};
+// const messages = {
+//   en: {
+//     title: '',
+//   },
+// };
 
-export default messages;
+// export default messages;
