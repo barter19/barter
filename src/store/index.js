@@ -35,7 +35,7 @@ const store = new Vuex.Store({
   mutations,
   getters,
   modules: {
-    demo: DemoModule,
+    demo: DemoModule
   },
 });
 

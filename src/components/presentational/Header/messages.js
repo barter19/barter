@@ -1,11 +1,12 @@
 /**
- * Demo i18n Messages
+ *  i18n Messages
  */
 
-// const messages = {
-//   en: {
-//     title: '',
-//   },
-// };
-
-// export default messages;
+const messages = {
+    en: {
+      title: 'Adla Badli',
+    },
+  };
+  
+  export default messages;
+  

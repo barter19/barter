@@ -1,9 +1,12 @@
 <template>
   <header class="header">
-    <h1 v-text="$t('title')" />
+    <md-toolbar class="md-primary">
+      <h3 
+        class="md-title" 
+        v-text="$t('title')"/>
+    </md-toolbar>
   </header>
 </template>
-
 <script>
 import messages from './messages';
 
