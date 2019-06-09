@@ -8,7 +8,10 @@
  */
 
 const state = {
-  chatId:"37geiq7e2h"
+  chatId: "37geiq7e2h",
+  loading: false,
+  exchangeProducts: [],
+  getProductsError: []
 };
 
 export default state;

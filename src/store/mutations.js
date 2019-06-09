@@ -17,8 +17,21 @@
  *    }
  */
 
-import {} from './constants';
+import { GET_EXCHANGE_PRODUCTS } from './constants';
 
-const mutations = {};
+
+const mutations = {
+    [GET_EXCHANGE_PRODUCTS.REQUEST](state) {
+        state.loading = true;
+    },
+    [GET_EXCHANGE_PRODUCTS.SUCCESS](state, payload) {
+        state.loading = false;
+        state.exchangeProducts = payload.posts;
+    },
+    [GET_EXCHANGE_PRODUCTS.FAILURE](state, payload) {
+        state.loading = false;
+        state.getProductsError = payload.error;
+    },
+};
 
 export default mutations;

@@ -361,13 +361,18 @@
 
 <script>
 import carousel from "vue-owl-carousel";
+import { mapState, mapGetters } from 'vuex';
 
 export default {
   name: "Dashboard",
   components: { carousel },
   data: function() {
     return { activetab: 1 };
-  }
+  },
+  mounted() {
+    this.$store.dispatch('getExchangeProducts');
+    console.log(this.chatId);
+  },
 };
 </script>
 
