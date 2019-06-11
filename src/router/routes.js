@@ -10,6 +10,7 @@
 // Lazy Load Routes
 const RegistrationPage = () => import('@/views/RegistrationPage');
 const Dashboard = () => import('@/views/Dashboard');
+const ProductDetailsPage = () => import('@/views/ProductDetailsPage');
 
 export default [
   {
@@ -22,4 +23,9 @@ export default [
     name: 'Dashboard',
     component: Dashboard,
   },
+  {
+    path: '/productDetails',
+    name: 'ProductDetails',
+    component: ProductDetailsPage,
+  }
 ];
