@@ -4,7 +4,8 @@
   <main>
     <link
       href="https://rawgit.com/ellekasai/twemoji-awesome/gh-pages/twemoji-awesome.css"
-      rel="stylesheet">
+      rel="stylesheet"
+    >
     <section class="productDetails">
       <div>
         <img src="../../../static/assets/img/icons/icon-192x192.png" alt="Skyscraper">
@@ -23,10 +24,18 @@
           <Bid/>
         </div>
         <div class="react">
-          <i class="twa twa-heart"></i>
-          <i class="twa twa-angry"></i>
-          <i class="twa twa-thumbsup"></i>
-          <i class="twa twa-thumbsdown"></i>
+          <md-button class="md-icon-button md-list-action">
+            <md-icon class="md-primary twa twa-thumbsup"></md-icon>
+          </md-button>
+          <md-button class="md-icon-button md-list-action">
+            <md-icon class="md-primary twa twa-heart"></md-icon>
+          </md-button>
+          <md-button class="md-icon-button md-list-action">
+            <md-icon class="md-primary twa twa-angry"></md-icon>
+          </md-button>
+          <md-button class="md-icon-button md-list-action">
+            <md-icon class="md-primary twa twa-thumbsdown"></md-icon>
+          </md-button>
         </div>
         <div>
           <h4 style="float:left">Comments</h4>
@@ -45,14 +54,26 @@
           </md-list-item>
 
           <md-divider class="md-inset"></md-divider>
+          <md-list-item>
+            <md-avatar>
+              <img src="https://placeimg.com/40/40/people/1" alt="People">
+            </md-avatar>
+            <div class="md-list-item-text">
+              <span>Ali Connors</span>
+              <span>Brunch this weekend?</span>
+            </div>
 
+            <md-button class="md-icon-button md-list-action">
+              <md-icon class="md-primary">star</md-icon>
+            </md-button>
+          </md-list-item>
         </div>
 
         <md-field>
-            <label>Comment here...</label>
-            <md-textarea v-model="textarea"></md-textarea>
-          </md-field>
-          <md-button>Submit</md-button>
+          <label>Comment here...</label>
+          <md-textarea v-model="textarea"></md-textarea>
+        </md-field>
+        <md-button class="md-raised md-primary">Submit</md-button>
       </div>
     </section>
   </main>
